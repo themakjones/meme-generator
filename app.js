@@ -1,12 +1,18 @@
-const addImage = (url) => {
+const addImage = (url, container) => {
     const img = document.createElement('img');
-    const div = document.createElement('div');
 
     img.src = url;
-    div.classList.add('meme');
-    div.appendChild(img)
+    img.classList.add('meme-img');
 
-    document.querySelector('#meme-container').appendChild(div);
+    container.appendChild(img)}
+
+const addText = (text, className, container) => {
+    const div = document.createElement('div');
+
+    div.classList.add(className);
+    div.innerText = text;
+
+    container.appendChild(div);
 }
 
 addEventListener('submit', ev => {
@@ -16,6 +22,15 @@ addEventListener('submit', ev => {
     let topText = document.querySelector('#top-text').value;
     let bottomText = document.querySelector('#bottom-text').value;
 
-    addImage(url);
+    let memeDiv = document.createElement('div');
+    memeDiv.classList.add('meme-container');
+
+    addImage(url, memeDiv);
+    addText(topText, 'top-text', memeDiv);
+    addText(bottomText, 'bottom-text', memeDiv);
+
+    document.body.appendChild(memeDiv);
+
+    document.querySelector('form').reset()
 })
 
