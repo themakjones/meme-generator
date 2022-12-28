@@ -29,7 +29,7 @@ addEventListener('submit', ev => {
     addText(topText, 'top-text', memeDiv);
     addText(bottomText, 'bottom-text', memeDiv);
 
-    document.body.appendChild(memeDiv);
+    document.querySelector('.result-container').appendChild(memeDiv);
 
     document.querySelector('form').reset()
 })
