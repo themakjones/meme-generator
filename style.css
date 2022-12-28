@@ -1,6 +1,7 @@
   .meme-container {
     position: relative;
     display: inline-block;
+    margin: 10px;
   }
   
   .top-text {
@@ -11,6 +12,10 @@
     top: 0;
     left: 0;
     font-size: 30px;
+    font-family: 'Black Han Sans', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px black;
+
   }
 
   .bottom-text {
@@ -21,6 +26,9 @@
     bottom: 0;
     left: 0;
     font-size: 30px;
+    font-family: 'Black Han Sans', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px black;
   }
   
   .meme-img {
@@ -29,4 +37,19 @@
     height: 400px;
     margin: auto;
     padding: auto;
+  }
+
+  input {
+    width: 100%;
+    padding: 5px;
+    border: solid blueviolet;
+    border-radius: 10px;
+  }
+
+  .result-container {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
   }
