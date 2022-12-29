@@ -42,8 +42,9 @@
   input {
     width: 100%;
     padding: 5px;
-    border: solid blueviolet;
-    border-radius: 10px;
+    border: none;
+    background-color: #f5fdff;
+    border-bottom: #ffcad4 2px solid;
   }
 
   .result-container {
@@ -60,7 +61,8 @@
     grid-template-columns: 20% 20% 20% 20%;
     grid-template-rows: auto;
     grid-template-areas: "a a a a" "b b c c" "d d d d";
-    gap: 50px
+    gap: 50px;
+    margin-top: 1.5rem;
   }
 
   #url-input {
@@ -86,12 +88,35 @@
     align-items: center;
   }
   .form-container {
-    background-color: burlywood;
-    border: solid 2px green;
+    background-color: #f5fdff;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 2em;
     width: 80%;
     margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
   }
+
+body {
+    background: linear-gradient(90deg, rgba(255,202,212,1) 0%, rgba(220,177,242,1) 50%, rgba(153,238,255,1) 100%);
+}
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: auto;
+  }
+
+button {
+    font-family: 'Ubuntu', sans-serif;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 15px;
+}
