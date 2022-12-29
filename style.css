@@ -41,10 +41,13 @@
 
   input {
     width: 100%;
-    padding: 5px;
+    padding: 5px 5px 15px;
     border: none;
     background-color: #f5fdff;
     border-bottom: #ffcad4 2px solid;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
   }
 
   .result-container {
@@ -119,4 +122,18 @@ button {
     border-radius: 10px;
     padding: 0px;
     font-size: 15px;
+    border: none;
+    background-color: #ffcad4;
+}
+
+input::placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border:  solid 2px #ffcad4;
+    border-radius: 10px;
 }
