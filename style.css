@@ -53,3 +53,45 @@
     align-items: center;
     justify-content: center;
   }
+
+  form {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "a a a a" "b b c c" "d d d d";
+    gap: 50px
+  }
+
+  #url-input {
+    grid-area: a;
+  }
+
+  #top-input {
+    grid-area: b;
+  }
+
+  #bottom-input {
+    grid-area: c;
+  }
+
+  .form-input.button {
+    grid-area: d;
+  }
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-container {
+    background-color: burlywood;
+    border: solid 2px green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    width: 80%;
+    margin: auto;
+  }
